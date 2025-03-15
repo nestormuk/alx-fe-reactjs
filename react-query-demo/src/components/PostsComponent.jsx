@@ -18,7 +18,7 @@ export default function PostsComponent() {
     });
 
     if (isLoading) return <p>Loading posts...</p>;
-    if (isError) return <p>Error fetching posts: {isError.message}</p>;
+    if (isError) return <p>error fetching posts: {isError.message}</p>;
 
     return (
         <div>
