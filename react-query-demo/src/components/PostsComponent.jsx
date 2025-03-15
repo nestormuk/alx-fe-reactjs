@@ -17,7 +17,7 @@ export default function PostsComponent() {
         staleTime: 5000,
         cacheTime: 300000,
         refetchOnWindowFocus: false,
-        KeepPreviousData: true,
+        keepPreviousData: true,
     });
 
     if (isLoading) return <p>Loading posts...</p>;
