@@ -11,14 +11,14 @@ const fetchPosts = async () => {
 
 export default function PostsComponent() {
   
-    const { data, isLoading, error, refetch } = useQuery ({
+    const { data, isLoading, isError, refetch } = useQuery ({
         queryKey: ['posts'],
         queryFn: fetchPosts,
         staleTime: 5000,
     });
 
     if (isLoading) return <p>Loading posts...</p>;
-    if (error) return <p>Error fetching posts: {error.message}</p>;
+    if (isError) return <p>Error fetching posts: {isError.message}</p>;
 
     return (
         <div>
