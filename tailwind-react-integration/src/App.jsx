@@ -4,9 +4,12 @@ function App() {
   
 
   return (
-    <>
-     <UserProfile />
-    </>
+    <div className="mx-10">
+       <UserProfile />
+
+    </div>
+    
+    
   )
 }
 
