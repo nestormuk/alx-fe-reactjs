@@ -2,7 +2,7 @@ import axios from "axios";
 
 const GITHUB_API_URL = import.meta.env.VITE_APP_GITHUB_API_URL || "https://api.github.com/search/users?q";
 
-export const fetchAdvancedUserData = async (username, location, minRepos) => {
+export const fetchUserData = async (username, location, minRepos) => {
   try {
     let query = [];
     if (username) query.push(`${username} in:login`);
