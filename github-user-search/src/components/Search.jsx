@@ -46,7 +46,7 @@ const Search = () => {
                     <img src={userData.avatar_url} alt="Avatar" />
                     <h3>{userData.name || "No Name Provided"}</h3>
                     <a href={userData.html_url} target="_blank" rel="noopener noreferrer">
-                        View Profile
+                        login
                     </a>
                 </div>
             )}
