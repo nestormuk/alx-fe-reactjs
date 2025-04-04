@@ -14,10 +14,10 @@ const Search = () => {
         setUserData(null); 
 
         try {
-            const data = await fetchUserData(username); // ✅ Corrected function name
+            const data = await fetchUserData(username); 
             setUserData(data);
         } catch (err) {
-            setError('User not found');
+            setError('Looks like we cant find the user you are looking for!');
         } finally {
             setLoading(false);
         }
